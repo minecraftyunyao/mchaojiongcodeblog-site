@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Mchaojiongblog&#39;code blog | MC昦坰编程博客</title>
+
+  
+  <meta name="author" content="MC昦炯">
+  
+
+  
+  <meta name="description" content="mc昦炯博客附属站">
+  
+
+  
+  <meta name="keywords" content="MC编程">
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  
+
+  <meta property="og:site_name" content="Mchaojiongblog&#39;code blog"/>
+
+  
+  <meta property="og:image" content="/favicon.ico"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Mchaojiongblog&#39;code blog" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  
+  <link href="https://fonts.lug.ustc.edu.cn/css?family=Lato|Rubik" rel="stylesheet">
+  <script src="/js/pangu-407.min.js"></script>
+<meta name="generator" content="Hexo 7.3.0"></head>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    pangu.autoSpacingPage();
+  });
+</script>
+
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">Mchaojiongblog&#39;code blog</a>
+    </h1>
+    <p class="site-description">MC昦坰编程博客</p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
+      
+        <li><a href="/">主页</a></li>
+      
+        <li><a href="/archives">归档</a></li>
+      
+        <li><a href="/categories">分类</a></li>
+      
+        <li><a href="/about">关于</a></li>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="site-main posts-loop">
+    
+  <article>
+
+  
+    
+    <h3 class="article-title"><a target="_blank" rel="noopener" href="//posts/hjcode/itp1/"><span>从什么不会到入门py</span></a></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a target="_blank" href="//posts/hjcode/itp1/" rel="bookmark noopener">
+        <time class="entry-date published" datetime="2026-05-24T06:28:49.000Z">
+          2026-05-24
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        
+
+        <blockquote>
+<p>Python创始人我们一般称为龟叔,本名吉多·范罗苏姆。<br>Python中文翻译过来就是蟒蛇</p>
+</blockquote>
+<h1 id="学python前的准备"><a href="#学python前的准备" class="headerlink" title="学python前的准备"></a>学python前的准备</h1><ol>
+<li>能运行代码的设备[手机电脑等]</li>
+<li>能写代码的文本编辑器[推荐IDE]</li>
+<li>百度[不懂查询错误的好工具]</li>
+<li>学习的动力及耐心</li>
+</ol>
+
+<h1 id="python环境安装"><a href="#python环境安装" class="headerlink" title="python环境安装"></a>python环境安装</h1><p>这里其他设备的python环境安装跳过[自行查找教程安装],每个人的设备不一样,根据设备选择对应的安装方式。这里博主使用的是Debian13 Linux 系统<br>直接输入指令安装</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install python3</span><br></pre></td></tr></table></figure>
+<p>如果提示Y&#x2F;N?输Y回车安装。<br>安装完后验证是否安装成功,输入下面指令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python3 --version</span><br></pre></td></tr></table></figure>
+<p>安装成功显示Python的版本号</p>
+<blockquote>
+<p>补充说明：Python分为2.x和3.x两大版本，2.x现已停止维护，目前学习统一使用Python3版本，所以终端命令都采用python3。</p>
+</blockquote>
+<h2 id="python程序的编写运行方式"><a href="#python程序的编写运行方式" class="headerlink" title="python程序的编写运行方式"></a>python程序的编写运行方式</h2><p>有两种方式</p>
+<ol>
+<li>交互方式</li>
+<li>文件方式</li>
+</ol>
+
+<blockquote>
+<p>交互方式：每写一行就可以回车运行，适合我们这简单的程序.</p>
+</blockquote>
+<p>在终端输入<code>python3</code>进入交互界面。<br>退出交互界面小技巧：输入 <code>exit()</code> 回车，或者按下键盘 <code>Ctrl+D</code> 即可回到终端初始界面。</p>
+<p>比如输入简单的程序:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt;<span class="built_in">print</span>(<span class="string">&quot;你好,世界!&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>输出：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">你好,世界!</span><br></pre></td></tr></table></figure>
+<p>注意：&gt;&gt;&gt;这个是输入提示符！</p>
+<blockquote>
+<p>文件方式：这个是我们常用的方式,适合代码太复杂，把代码写进xxx.py文件，然后用python3 xxx.py 运行，</p>
+</blockquote>
+<p>比如我创建了m.py文件，打开这个m.py文件编辑[用任意的文本编程工具,专业工具也行。]，在m.py输入些代码，就从最简单的print开始</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&quot;你好吗？&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;祝你有个美好的一天.&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>写完保存，进入文件所在的文件夹，然后输入</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python3 m.py</span><br></pre></td></tr></table></figure>
+<p>输出的结果应该是</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">你好吗？</span><br><span class="line">祝你有个美好的一天.</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>小提示:</p>
+<blockquote>
+<p>1.执行运行命令前，务必保证终端当前位置和xxx.py文件存放文件夹一致，否则会提示找不到文件。<br>2.重要避坑：编写代码时，括号、引号、逗号全部使用<strong>英文输入法</strong>符号，中文符号会直接程序报错。<br>3.<em>注意：编写任何程序代码编码要弄成UTF-8,不然会出错奇怪的bug</em><br>4.<em>Bug:指错误,漏洞！</em></p>
+</blockquote>
+</blockquote>
+<h1 id="Python的基础语法"><a href="#Python的基础语法" class="headerlink" title="Python的基础语法"></a>Python的基础语法</h1><h2 id="1-print"><a href="#1-print" class="headerlink" title="1. print"></a>1. print</h2><p>相信你已经知道print有什么做用了,每个人入门的第一个语法都是从print开始，<code>print</code>从字面意思看是打印的意思。在Python中print是Python内置功能，作用就是在屏幕上输出展示文字内容。<br>你可以把他想象成一个复读机，你说什么，他给你显示输出什么，你说你好，他就输出你好<br>语法：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>()</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+      
+
+    <span class="post-categories">
+      <i class="icon-categories"></i>
+        <a href="/categories/零小白入门python/">零小白入门python</a>
+    </span>
+    
+
+    
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/python/">python</a>
+    </span>
+    
+
+    </div>
+
+    
+    <div class="article-meta pull-right">
+      <span>
+        <i class="icon-comments"></i>
+        <span>
+          <a target="_blank" rel="noopener" href="//posts/hjcode/itp1/#comment">评论</a>
+        </span>
+      </span>
+    </div>
+    
+  </div>
+</article>
+
+
+
+
+<section class="pagination">
+  
+</section>
+
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Deployed by <a href="https://github.com/kaedea/notion-down" target="_blank">notion-down</a> and
+    Theme by <a href="https://github.com/kaedea/hexo-theme-hacker" target="_blank">hexo-theme-hacker</a>
+    </br>
+    
+    &copy; 2026 MC昦炯
+    
+  </p>
+</footer>
+    
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'G-J38N5N288S', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+  </div>
+</div>
+</body>
+</html>
